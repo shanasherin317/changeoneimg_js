@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="frame">
+        <div>
+        <h1>DOM Manipulation</h1>
+        <button id="button">Change image src</button>
+        <div class="divs">
+            <img id="image" src="https://img.freepik.com/free-photo/beautiful-flowers-with-water-drops_23-2150705665.jpg?w=2000" alt="">
+        </div>
+    </div>
+</div>
+    <script>
+        document.getElementById("button")
+        console.log(document.getElementById("button"))
+        let button=document.getElementById("button");
+         
+        document.getElementById("image")
+        console.log(document.getElementById("image"))
+        let image=document.getElementById("image");
+
+        button.addEventListener("click",function(){
+            image.src="https://img.freepik.com/premium-photo/purple-flower-with-water-drops-it_859451-3553.jpg"
+        })
+       
+
+    </script>
+</body>
+</html>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    .frame{
+        background-color: rgba(223, 91, 223, 0.644);
+        width: 100%;
+        height: 100vh;
+    }
+
+h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding-top: 100px;
+}
+#image{
+    width: 400px;
+    height: 330px;
+    border-radius: 8px;
+}
+div{
+text-align: center;
+}
+.divs{
+    margin-top: 20px;
+}
+#button{
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    background-color: black;
+}
+</style>
